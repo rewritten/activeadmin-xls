@@ -1,5 +1,7 @@
-require 'rake'
-require File.expand_path('../lib/active_admin/xls/version', __FILE__)
+$:.push File.expand_path("../lib", __FILE__)
+
+require 'active_admin/xls/version'
+
 Gem::Specification.new do |s|
   s.name        = 'activeadmin-xls'
   s.version     = ActiveAdmin::Xls::VERSION
